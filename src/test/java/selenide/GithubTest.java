@@ -22,7 +22,7 @@ public class GithubTest {
         $$(".markdown-body li").shouldHave(itemWithText("Soft assertions"));
         // - Откройте страницу SoftAssertions, проверьте что внутри есть пример кода для JUnit5
         $(byText("Soft assertions")).click();
-        $(".markdown-body").shouldBe(text("3. Using JUnit5 extend test class:"));
+        $(".markdown-body").shouldHave(text("3. Using JUnit5 extend test class:"));
 
 
 
